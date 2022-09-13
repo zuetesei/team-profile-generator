@@ -1,11 +1,10 @@
-const Inquirer = require('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
-const manager = require('./lib/Manager');
-const engineer = require('./lib/Engineer');
-const intern = require('./lib/Intern');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 const generateSite = require('./src/generate-page');
-const { default: inquirer } = require('inquirer');
 
 // empty array to hold all team members that will be entered by user
 const teamMembers = [];
@@ -232,13 +231,15 @@ const promptIntern = () => {
 
 const buildTeam = () => {
     console.log(`
-    ======================
-    Finished generating your team profile! 
-    ======================
+    ==========================
+
+    Team profile generated! :) 
+    
+    ==========================
     `);
 }
 
-// file system to create HTML 
+// fs to create HTML 
 
 promptManager();
 
