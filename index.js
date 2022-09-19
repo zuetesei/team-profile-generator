@@ -1,15 +1,20 @@
+const generateHTML = require("./src/page-template.js");
+
+// nodule modules 
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
+
+// team profiles 
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const generateTeamProfile = require("./src/page-template.js");
+
 const outputDir = path.resolve(__dirname, "dist")
 const outputPath = path.join(outputDir, "team.html");
 
 // empty array to hold all team members that will be entered by user
-const teamMembers = [];
+const team = [];
 
 function appMenu() {
     const createManager = () => {
@@ -69,7 +74,7 @@ function appMenu() {
         ]).then(answers => {
             console.log(answers);
             const manager = new Manager(answers.name, answers.managerID, answers.managerEmail, answers.managerOfficeNumber);
-            teamMembers.push(manager);
+            team.push(manager);
             promptMenu();
         })
     };
@@ -159,7 +164,7 @@ function appMenu() {
         ]).then(answers => {
             console.log(answers);
             const engineer = new Engineer(answers.name, answers.employeeID, answers.employeeEmail, answers.github);
-            teamMembers.push(engineer);
+            team.push(engineer);
             promptMenu();
         })
     };
@@ -227,12 +232,14 @@ function appMenu() {
         ]).then(answers => {
             console.log(answers);
             const intern = new Intern(answers.name, answers.employeeID, answers.employeeEmail, answers.school);
-            teamMembers.push(intern);
+            team.push(intern);
             promptMenu();
         })
     };
 
     const buildTeam = () => {
+        fs.writeFileSync(outputPath, generateHTML(team), "utf-8");
+
         console.log(`
         ==========================
     
@@ -240,14 +247,10 @@ function appMenu() {
     
         ==========================
         `);
-        if (!fs.existsSync(outputDir)) {
-            fs.mkdirSync(outputDir)
-        }
-        fs.writeFileSync(outputPath, generateTeamProfile(teamMembers), "utf-8");
-    }
+    };
 
     createManager()
-}
+};
 
 appMenu()
 
