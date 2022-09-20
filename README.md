@@ -5,13 +5,13 @@ The challenge was to build a Node.js command-line application that takes in info
 
 
 ## Table of Contents
-- User Story 
-- Acceptance Criteria 
-- Screenshot 
-- Walkthrough Video 
-- Credits 
+- [User Story](#user story)
+- [Acceptance Criteria] (#acceptance criteria)
+- [Screenshot] (#screenshot) 
+- [Walkthrough Video] (#walkthrough video)
+- [Credits] (#credits) 
 
-## User Story 
+## User Story  
 
 **AS A** manager <br> 
 **I WANT** to generate a webpage that displays my team's basic info <br> 
@@ -38,7 +38,10 @@ The challenge was to build a Node.js command-line application that takes in info
 **THEN**  I exit the application, and the HTML is generated <br> 
 
 ## Screenshot 
+<img width="1378" alt="Screen Shot 2022-09-20 at 2 42 35 PM" src="https://user-images.githubusercontent.com/107950028/191370173-aa4cb341-e2d4-4527-a6ef-9da39499150d.png">
+<img width="1382" alt="Screen Shot 2022-09-20 at 2 43 11 PM" src="https://user-images.githubusercontent.com/107950028/191370189-b0b065e9-53bb-445f-b793-5d82b5d02b83.png">
 
 ## Walkthrough Video 
+https://drive.google.com/file/d/18KEAX_s-Pc6cFfWk85nSf0GffIWpGFsE/view 
 
 ## Credits 
