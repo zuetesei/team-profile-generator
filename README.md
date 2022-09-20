@@ -5,11 +5,12 @@ The challenge was to build a Node.js command-line application that takes in info
 
 
 ## Table of Contents
-- [User Story](#user story)
-- [Acceptance Criteria] (#acceptance criteria)
-- [Screenshot] (#screenshot) 
-- [Walkthrough Video] (#walkthrough video)
-- [Credits] (#credits) 
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Screenshot](#screenshot)
+- [Walkthrough Video](#walkthrough-video)
+- [Credits](#credits)
+- [License](#license)
 
 ## User Story  
 
@@ -45,3 +46,9 @@ The challenge was to build a Node.js command-line application that takes in info
 https://drive.google.com/file/d/18KEAX_s-Pc6cFfWk85nSf0GffIWpGFsE/view 
 
 ## Credits 
+Made with &hearts; by Zue. 
+
+### License
+This project was created by Zuleika Tesei as part of the curriculum for the UC Davis Coding Boot Camp and Trilogy Education Services.
+
+© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
