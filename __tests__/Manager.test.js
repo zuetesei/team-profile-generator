@@ -3,7 +3,7 @@ const manager = new Manager('zue', '0444901', 'zuetesei@lol.com', '444');
 
 test('test if we can get the constructor values for the manager', () => {
     expect(manager.name).toBe('zue')
-    expect(manager.id).toBe('0444901')
+    expect(manager.identity).toBe('0444901')
     expect(manager.email).toBe('zuetesei@lol.com')
 });
 

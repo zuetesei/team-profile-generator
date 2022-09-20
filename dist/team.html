@@ -1,18 +1,77 @@
  
     <!DOCTYPE html>
     <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title> Team Profiles </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/83aacc2b97.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+        <title> Dev Team Profile </title>
+        <style>
+        header, 
+        body {
+            font-family: 'Montserrat';
+            font-weight: 500;
+        }
+      </style>
     </head>
 
+    <header>
+    <h1 class="bg-info text-white text-center"> Meet the XYZ Dev Team </h1>
+    </header>
+    
     <body>
     <main>
-        undefined
+    <div class="container">
+        <div class="row justify-content-center"> 
+        <div class="card border border-info col-3 .col-sm-6 mr-3 my-3">
+            <div class="card-header"> 
+            <i class="fa-solid fa-lg fa-user"></i> Manager
+            </div>
+            <div class="card-body">
+            <h3 class="card-title"> Zuleika Tesei </h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item fw-lighter"> ID: 001</li>
+                <li class="list-group-item fw-lighter"> Email: <span id="email"><a href="mailto:zuleikatesei@gmail.com">zuleikatesei@gmail.com</a></span></li>
+                <li class="list-group-item fw-lighter"> Office Number: 916</li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="card border border-info col-3 .col-sm-6 mr-3 my-3">
+            <div class="card-header">
+            <i class="fa-solid fa-lg fa-hammer"></i> Engineer
+            </div>
+            <div class="card-body">
+            <h3 class="card-title"> Lernantino Gibbons </h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item fw-lighter"> ID: 002</li>
+                <li class="list-group-item fw-lighter"> Email: <span id="email"><a href="mailto:lernantino@gmail.com">lernantino@gmail.com</a></span></li>
+                <li class="list-group-item fw-lighter"> Github Profile: <a target="_blank" href="https://github.com/917">917</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="card border border-info col-3 .col-sm-6 mr-3 my-3">
+            <div class="card-header"> 
+            <i class="fa-solid fa-lg fa-seedling"></i> Intern
+            </div>
+            <div class="card-body">
+            <h3 class="card-title"> Peter Gibson </h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item fw-lighter"> ID: 003</li>
+                <li class="list-group-item fw-lighter"> Email: <span id="email"><a href="mailto:pgibson@gmail.com">pgibson@gmail.com</a></span></li>
+                <li class="list-group-item fw-lighter"> School: UC Davis</li>
+            </ul>
+            </div>
+        </div>
+         </div>
+    </div>
     </main>
+   
     </body>
     </html>

@@ -23,8 +23,8 @@ function appMenu() {
                 type: 'input',
                 name: 'name',
                 message: 'What is your name? (Required)',
-                validate: managerName => {
-                    if (managerName) {
+                validate: name => {
+                    if (name) {
                         return true;
                     } else {
                         console.log("Please enter your name!")
@@ -34,10 +34,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'managerID',
+                name: 'identity',
                 message: 'What is your Employee ID Number? (Required)',
-                validate: managerID => {
-                    if (managerID) {
+                validate: identity => {
+                    if (identity) {
                         return true;
                     } else {
                         console.log("Please enter your Employee ID Number!")
@@ -47,10 +47,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'managerEmail',
+                name: 'email',
                 message: 'What is your email address? (Required)',
-                validate: managerEmail => {
-                    if (managerEmail) {
+                validate: email => {
+                    if (email) {
                         return true;
                     } else {
                         console.log("Please enter your email address!")
@@ -60,10 +60,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'managerOfficeNumber',
+                name: 'number',
                 message: 'What is your office number? (Required)',
-                validate: managerOfficeNumber => {
-                    if (managerOfficeNumber) {
+                validate: number => {
+                    if (number) {
                         return true;
                     } else {
                         console.log("Please enter your office number!")
@@ -73,7 +73,7 @@ function appMenu() {
             },
         ]).then(answers => {
             console.log(answers);
-            const manager = new Manager(answers.name, answers.managerID, answers.managerEmail, answers.managerOfficeNumber);
+            const manager = new Manager(answers.name, answers.identity, answers.email, answers.number);
             team.push(manager);
             promptMenu();
         })
@@ -113,8 +113,8 @@ function appMenu() {
                 type: 'input',
                 name: 'name',
                 message: 'What is your Engineer\'s name? (Required)',
-                validate: engineerName => {
-                    if (engineerName) {
+                validate: name => {
+                    if (name) {
                         return true;
                     } else {
                         console.log("Please enter Engineer's name!")
@@ -124,10 +124,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'employeeID',
+                name: 'identity',
                 message: 'What is your Engineer\'s Employee ID Number? (Required)',
-                validate: employeeID => {
-                    if (employeeID) {
+                validate: identity => {
+                    if (identity) {
                         return true;
                     } else {
                         console.log("Please enter your Engineer's ID Number!")
@@ -137,10 +137,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'employeeEmail',
+                name: 'email',
                 message: 'What is your email address? (Required)',
-                validate: employeeEmail => {
-                    if (employeeEmail) {
+                validate: email => {
+                    if (email) {
                         return true;
                     } else {
                         console.log("Please enter your email address!")
@@ -163,7 +163,7 @@ function appMenu() {
             },
         ]).then(answers => {
             console.log(answers);
-            const engineer = new Engineer(answers.name, answers.employeeID, answers.employeeEmail, answers.github);
+            const engineer = new Engineer(answers.name, answers.identity, answers.email, answers.github);
             team.push(engineer);
             promptMenu();
         })
@@ -181,8 +181,8 @@ function appMenu() {
                 type: 'input',
                 name: 'name',
                 message: 'What is your Intern\'s name? (Required)',
-                validate: internName => {
-                    if (internName) {
+                validate: name => {
+                    if (name) {
                         return true;
                     } else {
                         console.log("Please enter Intern's name!")
@@ -192,10 +192,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'employeeID',
+                name: 'identity',
                 message: 'What is your Intern\'s Employee ID Number? (Required)',
-                validate: employeeID => {
-                    if (employeeID) {
+                validate: identity => {
+                    if (identity) {
                         return true;
                     } else {
                         console.log("Please enter your Intern's ID Number!")
@@ -205,10 +205,10 @@ function appMenu() {
             },
             {
                 type: 'input',
-                name: 'employeeEmail',
+                name: 'email',
                 message: 'What is your email address? (Required)',
-                validate: employeeEmail => {
-                    if (employeeEmail) {
+                validate: email => {
+                    if (email) {
                         return true;
                     } else {
                         console.log("Please enter your email address!")
@@ -231,7 +231,7 @@ function appMenu() {
             },
         ]).then(answers => {
             console.log(answers);
-            const intern = new Intern(answers.name, answers.employeeID, answers.employeeEmail, answers.school);
+            const intern = new Intern(answers.name, answers.identity, answers.email, answers.school);
             team.push(intern);
             promptMenu();
         })

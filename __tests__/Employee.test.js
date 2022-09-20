@@ -3,7 +3,7 @@ const employee = new Employee('zue', '0444901', 'zuetesei@lol.com');
 
 test('test if we can get the constructor values for the employee', () => {
     expect(employee.name).toBe('zue')
-    expect(employee.id).toBe('0444901')
+    expect(employee.identity).toBe('0444901')
     expect(employee.email).toBe('zuetesei@lol.com')
 });
 

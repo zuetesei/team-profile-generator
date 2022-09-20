@@ -3,7 +3,7 @@ const intern = new Intern('zue', '0444901', 'zuetesei@lol.com', 'UC Davis');
 
 test('test if we can get the constructor values for the manager', () => {
     expect(intern.name).toBe('zue')
-    expect(intern.id).toBe('0444901')
+    expect(intern.identity).toBe('0444901')
     expect(intern.email).toBe('zuetesei@lol.com')
 });
 
